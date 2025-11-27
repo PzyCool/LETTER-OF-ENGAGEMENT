@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYDOMIHIVE LTD - Letter of Engagement</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .section-card {
+            transition: all 0.3s ease;
+            page-break-inside: avoid;
+        }
+        
+        .section-card:hover {
+            transform: translateY(-2px);
+        }
+        
+        .signature-block {
+            min-height: 100px;
+            margin-bottom: 20px;
+        }
+        
+        .document-header {
+            border-bottom: 3px solid #3b82f6;
+            padding-bottom: 1rem;
+        }
+        
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            
+            body {
+                background-color: white !important;
+            }
+            
+            .section-card {
+                box-shadow: none !important;
+                border: 1px solid #e5e7eb !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-sm py-4 px-6 sticky top-0 z-10 no-print">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="Assects/domihive-logo 2.png" alt="DomiHive Logo" class="h-10">
+                <h1 class="text-xl font-bold text-blue-800">MYDOMIHIVE LTD</h1>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button id="printBtn" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition flex items-center">
+                    <i class="fas fa-print mr-2"></i> Print
+                </button>
+                <button id="pdfBtn" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition flex items-center">
+                    <i class="fas fa-file-pdf mr-2"></i> Download PDF
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto py-8 px-4" id="document-content">
+        <!-- Document Header with Logo -->
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-8 section-card">
+            <div class="document-header flex flex-col md:flex-row items-center justify-between mb-6">
+                <div class="flex items-center space-x-4 mb-4 md:mb-0">
+                    <img src="Assects/domihive-logo 2.png" alt="DomiHive Logo" class="h-16">
+                    <div>
+                        <h1 class="text-3xl font-bold text-blue-800">MYDOMIHIVE LTD</h1>
+                        <h2 class="text-xl font-semibold text-gray-700">LETTER OF ENGAGEMENT</h2>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <p class="text-lg text-gray-600">Date: 28 November 2025</p>
+                </div>
+            </div>
+
+            <!-- Recipient Address -->
+            <div class="mb-8">
+                <p class="text-lg mb-2">Dear <span class="font-semibold">Onwuka Somtochukwu Emmanuel</span>,</p>
+                <p class="text-lg">
+                    We are pleased to confirm your engagement with <span class="font-semibold text-blue-700">MYDOMIHIVE LTD</span> in the
+                    capacity of <span class="font-semibold text-blue-700">Junior Frontend Developer (Support Role)</span> within the
+                    Technology Department.
+                </p>
+                <p class="text-lg mt-4">
+                    This Letter of Engagement outlines the initial terms of your involvement
+                    with the Company pending the issuance of a full Employment Contract.
+                </p>
+            </div>
+
+            <!-- 1. POSITION DETAILS -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold text-blue-800 mb-4 border-b-2 border-blue-200 pb-2">1. POSITION DETAILS</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 ml-4">
+                    <div class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <div>
+                            <span class="font-semibold">Position Title:</span> Junior Frontend Developer
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <div>
+                            <span class="font-semibold">Department:</span> Technology
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <div>
+                            <span class="font-semibold">Reporting Line:</span> Chief Technology Officer (CTO) – Melvin Okievor
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <div>
+                            <span class="font-semibold">Start Date:</span> Friday, 28 November 2025
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <div>
+                            <span class="font-semibold">Work Schedule:</span> Monday to Friday, 9:00 AM – 5:00 PM (WAT)
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <div>
+                            <span class="font-semibold">Work Type:</span> Remote (with possible in-person sessions if required)
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <div>
+                            <span class="font-semibold">Weekly Commitment:</span> Approximately 35–40 hours
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <div>
+                            <span class="font-semibold">Public Holidays:</span> No work required on national/public holidays
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. NATURE OF ENGAGEMENT -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold text-blue-800 mb-4 border-b-2 border-blue-200 pb-2">2. NATURE OF ENGAGEMENT</h3>
+                
+                <p class="mb-4 text-lg">
+                    You are being engaged as part of MyDomihive's early-stage product
+                    development team. This is a <span class="font-semibold text-blue-700">temporary/remote engagement</span> intended to
+                    transition into a formal employment relationship after the completion of
+                    required documentation and compliance steps.
+                </p>
+                
+                <p class="text-lg">
+                    Your contributions are essential for the development of the MVP
+                    (Minimum Viable Product) and frontend engineering tasks as assigned by
+                    the CTO.
+                </p>
+            </div>
+
+            <!-- 3. COMPENSATION STRUCTURE -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold text-blue-800 mb-4 border-b-2 border-blue-200 pb-2">3. COMPENSATION STRUCTURE</h3>
+                
+                <p class="mb-4 text-lg">
+                    As with early-stage startup standards, compensation will follow:
+                </p>
+                
+                <div class="ml-6 mb-6">
+                    <div class="flex items-start mb-4">
+                        <span class="text-blue-600 font-bold mr-2">•</span>
+                        <div>
+                            <span class="font-semibold text-blue-700">Deferred Salary:</span><br>
+                            Salary payments will commence once the Company achieves revenue,
+                            funding, or significant capital inflow.
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <span class="text-blue-600 font-bold mr-2">•</span>
+                        <div>
+                            <span class="font-semibold text-blue-700">Equity Consideration:</span><br>
+                            You may become eligible for equity after <span class="font-semibold">3–6 months</span> of verified,
+                            consistent performance and based on Board approval.<br>
+                            Any equity granted will include a vesting schedule and a formal
+                            Equity Grant Agreement.
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="text-lg bg-blue-50 p-4 rounded-lg">
+                    This structure ensures fairness and transparency across all early-stage
+                    team members.
+                </p>
+            </div>
+
+            <!-- 4. PERFORMANCE EXPECTATIONS -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold text-blue-800 mb-4 border-b-2 border-blue-200 pb-2">4. PERFORMANCE EXPECTATIONS</h3>
+                
+                <p class="mb-4 text-lg">You are expected to:</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-2 ml-6">
+                    <div class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Complete assigned frontend tasks</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Attend weekly dev check-ins with the CTO</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Submit updates using the Job Report Sheet</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Maintain clean, well-documented, and bug-minimized code</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Collaborate effectively with the development team</span>
+                    </div>
+                </div>
+                
+                <p class="mt-4 text-lg bg-yellow-50 p-4 rounded-lg">
+                    A detailed Job Description (JD) and KPI sheet will be provided to you.
+                </p>
+            </div>
+
+            <!-- 5. DOCUMENTS REQUIRED -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold text-blue-800 mb-4 border-b-2 border-blue-200 pb-2">5. DOCUMENTS REQUIRED (Within 14 Days)</h3>
+                
+                <p class="mb-4 text-lg">
+                    Within the next <span class="font-semibold">2 weeks</span>, you will be required to complete and sign
+                    the following documents:
+                </p>
+                
+                <div class="ml-6 space-y-3">
+                    <div class="flex items-start">
+                        <span class="text-blue-600 font-bold mr-2">1.</span>
+                        <span class="font-semibold">Guarantor Form</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-blue-600 font-bold mr-2">2.</span>
+                        <span class="font-semibold">Non-Disclosure Agreement (NDA)</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-blue-600 font-bold mr-2">3.</span>
+                        <span class="font-semibold">Non-Compete Agreement</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-blue-600 font-bold mr-2">4.</span>
+                        <span class="font-semibold">Identity Verification (Valid ID)</span>
+                    </div>
+                </div>
+                
+                <p class="mt-4 text-lg bg-red-50 p-4 rounded-lg">
+                    These documents are mandatory for all MyDomihive team members handling
+                    internal systems, codebases, data, or confidential materials.
+                </p>
+            </div>
+
+            <!-- 6. DOCUMENTS TO BE PROVIDED SOON -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold text-blue-800 mb-4 border-b-2 border-blue-200 pb-2">6. DOCUMENTS TO BE PROVIDED SOON</h3>
+                
+                <p class="mb-4 text-lg">
+                    Within <span class="font-semibold">2–4 weeks</span>, the Company will provide you with:
+                </p>
+                
+                <div class="ml-6 space-y-3">
+                    <div class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Official <span class="font-semibold">Employment Contract</span></span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span><span class="font-semibold">Offer Letter</span></span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Detailed <span class="font-semibold">Job Description (JD)</span></span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span><span class="font-semibold">Job Activity & Time Report Sheet</span></span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Access policies for tools, repos, and communication channels</span>
+                    </div>
+                </div>
+                
+                <p class="mt-4 text-lg">
+                    These documents will define your long-term employment terms.
+                </p>
+            </div>
+
+            <!-- 7. CONFIDENTIALITY & IP OWNERSHIP -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold text-blue-800 mb-4 border-b-2 border-blue-200 pb-2">7. CONFIDENTIALITY & IP OWNERSHIP</h3>
+                
+                <p class="mb-4 text-lg bg-blue-50 p-4 rounded-lg font-semibold">
+                    All code, designs, ideas, prototypes, documentation, or intellectual
+                    property created during your engagement automatically become the
+                    property of <span class="text-blue-700">MyDomihive Ltd</span>.
+                </p>
+                
+                <p class="mb-4 text-lg">You must maintain strict confidentiality regarding:</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-2 ml-6">
+                    <div class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Source code</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>System architecture</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Roadmaps</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Internal discussions</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Company data</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. TERMINATION POLICY -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold text-blue-800 mb-4 border-b-2 border-blue-200 pb-2">8. TERMINATION POLICY</h3>
+                
+                <p class="mb-4 text-lg">
+                    This engagement may be terminated:
+                </p>
+                
+                <div class="ml-6 mb-4">
+                    <div class="flex items-start mb-2">
+                        <span class="text-blue-600 font-bold mr-2">•</span>
+                        <span>By either party with <span class="font-semibold">14 days notice</span>, OR</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-blue-600 font-bold mr-2">•</span>
+                        <div>
+                            Immediately by the Company for:
+                            <div class="ml-6 mt-2 space-y-1">
+                                <div class="flex items-start">
+                                    <span class="text-blue-400 mr-2">-</span>
+                                    <span>Misconduct</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <span class="text-blue-400 mr-2">-</span>
+                                    <span>Poor performance</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <span class="text-blue-400 mr-2">-</span>
+                                    <span>Breach of confidentiality</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <span class="text-blue-400 mr-2">-</span>
+                                    <span>Refusal to complete required documents</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <span class="text-blue-400 mr-2">-</span>
+                                    <span>Violation of Company policies</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. ACCEPTANCE -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold text-blue-800 mb-4 border-b-2 border-blue-200 pb-2">9. ACCEPTANCE</h3>
+                
+                <p class="mb-4 text-lg">
+                    Please acknowledge receipt and acceptance of this Letter of Engagement
+                    by replying in writing or signing and returning a copy.
+                </p>
+                
+                <p class="mb-8 text-lg">
+                    We look forward to working with you and contributing to the development
+                    and growth of MyDomihive together.
+                </p>
+                
+                <div class="mt-12">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <img src="Assects/domihive-logo 2.png" alt="DomiHive Logo" class="h-12">
+                        <div>
+                            <p class="font-semibold text-lg">Sincerely,</p>
+                        </div>
+                    </div>
+                    
+                    <div class="signature-block">
+                        <div class="mt-16 border-t-2 border-gray-400 pt-2">
+                            <p class="font-medium text-lg">Prosper Ovokeroye Matarh Arharhire</p>
+                            <p class="text-gray-600">Chief Executive Officer (CEO)</p>
+                            <p class="text-gray-600">MyDomihive Ltd</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Employee Acceptance Section -->
+            <div class="mt-12 pt-8 border-t-2 border-gray-300">
+                <h3 class="text-xl font-bold text-blue-800 mb-4">EMPLOYEE ACCEPTANCE</h3>
+                
+                <p class="mb-6 text-lg">
+                    I acknowledge that I have read, understood, and accept the terms and conditions
+                    outlined in this Letter of Engagement.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="signature-block">
+                        <p class="font-medium mb-2">Signature:</p>
+                        <div class="mt-12 border-b-2 border-gray-400 pb-2"></div>
+                    </div>
+                    
+                    <div class="signature-block">
+                        <p class="font-medium mb-2">Date:</p>
+                        <div class="mt-12 border-b-2 border-gray-400 pb-2"></div>
+                    </div>
+                </div>
+                
+                <div class="mt-8">
+                    <p class="font-medium mb-2">Full Name (Printed):</p>
+                    <div class="border-b-2 border-gray-400 pb-2">Onwuka Somtochukwu Emmanuel</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- END OF DOCUMENT -->
+        <div class="bg-white rounded-xl shadow-lg p-8 text-center section-card">
+            <div class="flex items-center justify-center space-x-4 mb-4">
+                <img src="Assects/domihive-logo 2.png" alt="DomiHive Logo" class="h-8">
+                <p class="text-lg font-semibold">END OF DOCUMENT</p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const printBtn = document.getElementById('printBtn');
+        const pdfBtn = document.getElementById('pdfBtn');
+        const documentContent = document.getElementById('document-content');
+        
+        printBtn.addEventListener('click', function() {
+            window.print();
+        });
+        
+        pdfBtn.addEventListener('click', function() {
+            // Create PDF from the document content
+            const options = {
+                margin: 10,
+                filename: 'MYDOMIHIVE_Letter_of_Engagement.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+            
+            html2pdf().set(options).from(documentContent).save();
+        });
+    </script>
+</body>
+</html>
